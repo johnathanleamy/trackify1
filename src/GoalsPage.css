@@ -1,0 +1,9 @@
+.Goals-timerSet {
+    border: 2px solid red;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}

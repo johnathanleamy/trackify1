@@ -1,0 +1,17 @@
+.Dash-tasks {
+    display: flex;
+    flex-direction: row; 
+    
+    position: relative;
+ 
+}
+
+.Dash-today {
+    flex: 1.7;
+    
+}
+.Dash-getDone {
+    flex: 1;
+    padding-left: 25px;
+    padding-right: 24px;
+}

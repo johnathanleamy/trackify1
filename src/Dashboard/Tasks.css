@@ -1,0 +1,43 @@
+.tasks-header {
+    display: flex;
+    flex-direction: row;
+    
+    padding-left: 38px;
+    width: 40%;
+    justify-content: space-between;
+}
+.tasks-list {
+    margin-top: 44px;
+    /* flex: 1; */
+    background-color: #F2EAE5;
+    border-radius: 14px;
+    border: 2px solid green;
+    position: relative;
+    /* margin-right: 20px; */
+}
+
+.task-task {
+    width: 100%;
+    border: 1px dashed blue;
+    padding-left: 30px;
+}
+
+.tasks-todaytask {
+    margin-left: 18px;
+    
+    padding-top: 18px;
+}
+
+.task-check {
+    margin-right: 10px;
+}
+
+.task-date-tag {
+
+   border: 1px dashed red;
+   margin-right: 60px;
+    float: right;
+  
+}
+
+

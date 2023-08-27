@@ -1,0 +1,42 @@
+.headering {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px #D8CDC6;
+    width: 99%;
+    height: 94px;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    margin-left: auto;
+    background-color: white;
+    width: 25vw;
+    height: 48px;
+    margin-right: 10px;
+    align-items: center;
+    align-content: center;
+    border-radius: 110px;
+}
+
+.search-text {
+    color: #060606;
+    margin-top: 1px;
+    margin-left: 13px;
+}
+.search_icon {
+    margin-top: 1px;
+    margin-left: 13px;
+}
+.bell {
+    background-color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 110px;
+    padding: 16px;
+    margin-right: 10px;
+}

@@ -1,0 +1,30 @@
+.main-Goal-Dash {
+
+    width: 98%;
+    
+}
+
+.head-goal-dash {
+    margin-left: 6px;
+}
+
+.timerSet {  
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pg-empty {
+    background-color: #F2EAE5;
+    border-radius: 28px;
+    width: 23%;
+    height: 50%;
+  }
+
+.pg-newButton {
+    background-color: #F2EAE5;
+    border-radius: 28px;
+    width: 23%;
+    border: none;
+}

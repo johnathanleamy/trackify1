@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Timer1.css";
 
-const CircularProgressBar = () => {
-  const [percentage, setPercentage] = useState(25);
-
-  const handleChangeEvent = (event) => {
-    setPercentage(event.target.value);
-  };
-
+const CircularProgressBar = ({ current,startMin, startSec }) => {
   const sqSize = 200;
   const radius = (sqSize - 10) / 2;
   const viewBox = `0 0 ${sqSize} ${sqSize}`;
   const dashArray = radius * Math.PI * 2;
-  const dashOffset = dashArray - (dashArray * percentage) / 100;
-//from the last input change to match the timer value
+  const dashOffset = dashArray - (dashArray * current) / (60*startMin+startSec);
+
+  const formatTime = (timeInSeconds) => {
+    const minutes = Math.floor(timeInSeconds / 60);
+    const seconds = timeInSeconds % 60;
+    return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  };
+
   return (
     <div className="timerbar-whole">
       <svg width={sqSize} height={sqSize} viewBox={viewBox}>
@@ -42,21 +42,11 @@ const CircularProgressBar = () => {
           y="50%"
           dy=".3em"
           textAnchor="middle"
+      
         >
-          {`${percentage}%`}
+          {`${formatTime(current)}`}
         </text>
       </svg>
-      <div>
-        <input
-          id="progressInput"
-          type="range"
-          min="0"
-          max="100"
-          step="1"
-          value={percentage}
-          onChange={handleChangeEvent}
-        />
-      </div>
     </div>
   );
 };

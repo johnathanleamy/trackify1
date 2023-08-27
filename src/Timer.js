@@ -1,11 +1,14 @@
 import './Timer.css'; // If you have a separate CSS file for styling the header
 import React, { useState, useRef } from 'react';
-import play from './icons/play_icon.png';
-import edit from './icons/edit.png';
-import pause from './icons/pause_icon.png';
+import { ReactComponent as PlayIcon } from "./icons/play_con.svg";
+import { ReactComponent as EditIcon } from "./icons/edit_icon.svg";
 
-function Timer() {
-  const [timer, setTimer] = useState(60 * 60); // Initial timer value in seconds
+import pause from './icons/pause_icon.png';
+import CircularProgressBar from './Timer2';
+
+function Timer(props) {
+  const { title, min, sec } = props; 
+  const [timer, setTimer] = useState(min * 60 + sec); // Initial timer value in seconds
   const [isActive, setIsActive] = useState(false);
   const countdownRef = useRef(null);
 
@@ -39,25 +42,39 @@ function Timer() {
     clearInterval(countdownRef.current);
     setTimer(30 * 60); // Reset timer value to 30 minutes (30 * 60 seconds)
   };
+
+  //const percentageValue = 50;<div className="timer">{formatTime(timer)}</div>
     return (
-        <div className="App">
-        <div className="timer">{formatTime(timer)}</div>
-        <div className="buttons">
-          {!isActive && (
-            <button onClick={startTimer}>
-              <img src={play} alt="Logo " width={50}/>
-            </button>
-          )}
-          {isActive && (
-            <button onClick={pauseTimer}>
-              <img src={pause} alt="Logo" width={50} />
-            </button>
-          )}
-          <button onClick={resetTimer}>
-            <img src={edit} alt="Logo" width={50} />
-          </button>
+        <div className="timer">
+          <div className='timer-top'>
+            <CircularProgressBar current={timer} startMin={min} startSec={sec} className="timer-progressbar"/>
+          <div className="timer-buttons">
+              {!isActive && (
+                <button onClick={startTimer}>
+                  <PlayIcon />
+                </button>
+              )}
+              {isActive && (
+                <button onClick={pauseTimer}>
+                  <img src={pause} alt="Logo" width={50} />
+                </button>
+              )}
+              <button onClick={resetTimer}>
+                <EditIcon />
+              </button>
+            </div>
+          </div>
+          <div className='timer-bottom'>
+          <div className='timer-title'>
+            {title}
+          </div>
+          <div className='timer-chosing'>
+            <div className='timer-chosing-text'>Weekly</div>
+              
+          </div>
+          </div>
+          
         </div>
-      </div>
     );
   }
 

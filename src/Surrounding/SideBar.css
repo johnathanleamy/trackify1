@@ -1,0 +1,102 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 260px; /* Adjust the width as needed */
+  height: 100vh;
+  
+  background-color: #060606; /* Adjust the background color as desired */
+}
+
+.header-container {
+  padding: 10px;
+}
+/*--------------------------------------------------- icon*/
+.icon {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-left:30px;
+}
+
+.iconName {
+  margin-left: 10px;
+  color: #FFF;
+  font-size: 37px;
+}
+/*--------------------------------------------------    project*/
+.createProj {
+  display: flex;
+  background-color: #FFF;
+  margin-top: 70px;
+  margin-left: 30px;
+  margin-right: 46px;
+  border-radius: 24px;
+  height: 48px;
+  width: 184px;
+}
+
+.add-icon {
+  padding-left: 7px;
+}
+
+.createText {
+  padding-left: 10px;
+  padding-right: 58px;
+  color: #000;
+}
+
+
+/*------------------------------------------------------   other  */
+
+.other {
+  display: flex;
+  background-color: #000;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 46px;
+  border-radius: 24px;
+  height: 48px;
+  width: 184px;
+}
+
+.other-icon {
+  padding-top: 13px;
+  padding-left: 16px;
+  
+  color: #F1F1F1;
+  
+}
+
+.otherText {
+  margin-left: 10px;
+  margin-right: 58px;
+  margin-bottom: 17px;
+  margin-top: 13px;
+  color: #F1F1F1;
+}
+/*-----------------------------------------------------    dashboard icon*/
+
+.dash {
+  display: flex;
+  background-color: #FFF;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 46px;
+  border-radius: 24px;
+  height: 48px;
+  width: 184px;
+}
+
+.dashboard-icon {
+  padding-top: 13px;
+  padding-left: 16px;
+  color: #E65F2B;
+}
+
+.DashText {
+  margin-left: 10px;
+  margin-right: 58px;
+  margin-bottom: 17px;
+  margin-top: 13px;
+  color: #E65F2B;
+}
