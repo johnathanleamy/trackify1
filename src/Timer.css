@@ -1,0 +1,51 @@
+.timer {
+  background-color: #F2EAE5;
+  border-radius: 28px;
+  width: 23%;
+  
+}
+.timer-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.timer-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  
+}
+
+.timer-title {
+  font-size: 2em;
+}
+
+.timer-buttons{
+  margin: auto;
+}
+
+.timer-bottom {
+  /**/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25px;
+  margin-bottom: 12px;
+}
+.timer-chosing {
+  background-color: white;
+  width: 103px;
+  height: 34px;
+  align-content: center;
+  align-items: center;
+  border-radius: 34px;
+  margin-left: auto;
+  margin-right: 13px;
+}
+.timer-chosing-text {
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

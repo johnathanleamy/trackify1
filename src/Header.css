@@ -1,0 +1,29 @@
+.header-container {
+    background-color: #fff;
+    color: #A0CEBD;
+    padding: 10px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: bottom;
+  }
+  
+  .header-title {
+    font-size: 49px;
+    margin: 0;
+    padding-left: 67px;
+    bottom: 0px;
+    
+  }
+
+  .header-content {
+    flex-direction: column;
+    color: #B9B9B7;
+    align-self: flex-end;  
+  }
+  
+  .goals-container {
+    display: flex;
+    justify-content: space-around;
+    width: 66%;
+    align-items: flex-end;
+  }
